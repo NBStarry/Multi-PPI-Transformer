@@ -1,7 +1,7 @@
 # Multiple-PPI-Transformer
 Multiple PPI Transformer (MPIT) is based on Graph Transformer Networks (GTNs) to discern specific cancer driver genes. MPIT adeptly amalgamates data from diverse PPI and multi-omics sources through the synergy of embedding alignment and fusion.
 
-![image](https://github.com/NBStarry/Multiple-PPI-Transformer/blob/main/img/Framework.pdf)
+![image](https://github.com/NBStarry/Multiple-PPI-Transformer/blob/main/img/Framework.png)
 
 ## Conda Environment
 We recommend using conda to configure the code runtime environment:
