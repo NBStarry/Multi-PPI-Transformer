@@ -1,0 +1,60 @@
+K00922               PIK3CA_B_D; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha/beta/delta [EC:2. 
+K01116               PLCG1; phosphatidylinositol phospholipase C, gamma-1 [EC:3.1.4.11] 
+K01522               FHIT; bis(5'-adenosyl)-triphosphatase [EC:3.6.1.29] 
+K02089               CDK4; cyclin-dependent kinase 4 [EC:2.7.11.22] 
+K02091               CDK6; cyclin-dependent kinase 6 [EC:2.7.11.22] 
+K02158               BAD; Bcl-2-antagonist of cell death 
+K02159               BAX; apoptosis regulator BAX 
+K02649               PIK3R1_2_3; phosphoinositide-3-kinase regulatory subunit alpha/beta/delta 
+K02677               PRKCA; classical protein kinase C alpha type [EC:2.7.11.13] 
+K02833               HRAS; GTPase HRas 
+K03099               SOS; son of sevenless 
+K03511               POLK; DNA polymerase kappa [EC:2.7.7.7] 
+K04357               EGF; epidermal growth factor 
+K04361               EGFR, ERBB1; epidermal growth factor receptor [EC:2.7.10.1] 
+K04364               GRB2; growth factor receptor-bound protein 2 
+K04365               BRAF; B-Raf proto-oncogene serine/threonine-protein kinase [EC:2.7.11.1] 
+K04366               RAF1; RAF proto-oncogene serine/threonine-protein kinase [EC:2.7.11.1] 
+K04368               MAP2K1, MEK1; mitogen-activated protein kinase kinase 1 [EC:2.7.12.2] 
+K04369               MAP2K2, MEK2; mitogen-activated protein kinase kinase 2 [EC:2.7.12.2] 
+K04371               ERK, MAPK1_3; mitogen-activated protein kinase 1/3 [EC:2.7.11.24] 
+K04399               CASP9; caspase 9 [EC:3.4.22.62] 
+K04402               GADD45; growth arrest and DNA-damage-inducible protein 
+K04411               STK4, MST1; serine/threonine kinase 4 
+K04451               TP53, P53; tumor protein p53 
+K04456               AKT; RAC serine/threonine-protein kinase [EC:2.7.11.1] 
+K04503               CCND1; G1/S-specific cyclin-D1 
+K04692               STAT3; signal transducer and activator of transcription 3 
+K05083               ERBB2, HER2, CD340; receptor tyrosine-protein kinase erbB-2 [EC:2.7.10.1] 
+K05099               MET, HGFR; proto-oncogene tyrosine-protein kinase Met [EC:2.7.10.1] 
+K05119               ALK, CD246; anaplastic lymphoma kinase [EC:2.7.10.1] 
+K05126               RET; proto-oncogene tyrosine-protein kinase Ret [EC:2.7.10.1] 
+K05460               HGF; hepatocyte growth factor 
+K05859               PLCG2; phosphatidylinositol phospholipase C, gamma-2 [EC:3.1.4.11] 
+K06276               PDPK1; 3-phosphoinositide dependent protein kinase-1 [EC:2.7.11.1] 
+K06618               RB1; retinoblastoma-associated protein 
+K06620               E2F3; transcription factor E2F3 
+K06621               CDKN2A, P16, INK4A; cyclin-dependent kinase inhibitor 2A 
+K06625               CDKN1A, P21, CIP1; cyclin-dependent kinase inhibitor 1A 
+K07827               KRAS, KRAS2; GTPase KRas 
+K07828               NRAS; GTPase NRas 
+K08015               RASSF5, RAPL; Ras association domain-containing protein 5 
+K08524               RXRA, NR2B1; retinoid X receptor alpha 
+K08525               RXRB, NR2B2; retinoid X receptor beta 
+K08526               RXRG, NR2B3; retinoid X receptor gamma 
+K08528               RARB, NR1B2; retinoic acid receptor beta 
+K08774               TGFA; transforming growth factor, alpha 
+K08845               ARAF, ARAF1; A-Raf proto-oncogene serine/threonine-protein kinase [EC:2.7.11.1] 
+K09389               E2F2; transcription factor E2F2 
+K09408               FOXO3; forkhead box protein O3 
+K09850               RASSF1; Ras association domain-containing protein 1 
+K10140               DDB2; DNA damage-binding protein 2 
+K10396               KIF5; kinesin family member 5 
+K11218               JAK3; Janus kinase 3 [EC:2.7.10.2] 
+K11223               STAT5A; signal transducer and activator of transcription 5A 
+K11224               STAT5B; signal transducer and activator of transcription 5B 
+K14021               BAK, BAK1; Bcl-2 homologous antagonist/killer 
+K15420               EML4; echinoderm microtubule-associated protein-like 4 
+K17454               E2F1; transcription factor E2F1 
+K19662               PRKCB; classical protein kinase C beta type [EC:2.7.11.13] 
+K19663               PRKCG; classical protein kinase C gamma type [EC:2.7.11.13] 

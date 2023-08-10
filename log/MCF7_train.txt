@@ -1,0 +1,205 @@
+Display : False
+attn_drop : 0.3
+batch_size : 128
+cv_folds : 5
+data_dir : data/Breast_Cancer_Matrix
+drop_neg : 0.3
+drop_rate : 0.3
+heads : 4
+hidden_channels : 24
+lambda : 0.1
+learnable_factor : True
+lr : 0.002
+load_data : True
+log_dir : log
+loss : MMD
+mean : False
+num_epochs : 500
+num_neighbors : [40, 10]
+pooling : max
+pos_only : False
+pre_drop_rate : 0
+project : MPIT
+random_seed : 42
+reciprocal : False
+repeat : 1
+residual : True
+sample_rate : 1.0
+stable : True
+start_epoch : 100
+out_dir : outs
+wandb : False
+weight_decay : 0.005
+ablation : False
+cv : True
+change_loss : False
+encode : False
+fold : 0
+gpu : cuda:3
+model : Multi_GATRes
+pred : False
+start_fold : 0
+sh : False
+toy : False
+train : True
+feat_disturb : None
+mode : train
+log_file : log/MCF7_train.txt
+Model: Multi_GATRes
+Train: 1026Valid: 194Test: 388
+Multi_GATRes(
+  (convs): ModuleList(
+    (0): GATRes(
+      (convs): ModuleList(
+        (0): TransformerConv(10, 24, heads=4)
+        (1): TransformerConv(34, 24, heads=4)
+      )
+      (ln1): LayerNorm(34, affine=True, mode=graph)
+      (ln2): LayerNorm(48, affine=True, mode=graph)
+      (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (1): GATRes(
+      (convs): ModuleList(
+        (0): TransformerConv(10, 24, heads=4)
+        (1): TransformerConv(34, 24, heads=4)
+      )
+      (ln1): LayerNorm(34, affine=True, mode=graph)
+      (ln2): LayerNorm(48, affine=True, mode=graph)
+      (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (2): GATRes(
+      (convs): ModuleList(
+        (0): TransformerConv(10, 24, heads=4)
+        (1): TransformerConv(34, 24, heads=4)
+      )
+      (ln1): LayerNorm(34, affine=True, mode=graph)
+      (ln2): LayerNorm(48, affine=True, mode=graph)
+      (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (3): GATRes(
+      (convs): ModuleList(
+        (0): TransformerConv(10, 24, heads=4)
+        (1): TransformerConv(34, 24, heads=4)
+      )
+      (ln1): LayerNorm(34, affine=True, mode=graph)
+      (ln2): LayerNorm(48, affine=True, mode=graph)
+      (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (4): GATRes(
+      (convs): ModuleList(
+        (0): TransformerConv(10, 24, heads=4)
+        (1): TransformerConv(34, 24, heads=4)
+      )
+      (ln1): LayerNorm(34, affine=True, mode=graph)
+      (ln2): LayerNorm(48, affine=True, mode=graph)
+      (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+  )
+  (ppi_weight): ParameterList(
+      (0): Parameter containing: [torch.cuda.FloatTensor of size 1x1 (GPU 3)]
+      (1): Parameter containing: [torch.cuda.FloatTensor of size 1x1 (GPU 3)]
+      (2): Parameter containing: [torch.cuda.FloatTensor of size 1x1 (GPU 3)]
+      (3): Parameter containing: [torch.cuda.FloatTensor of size 1x1 (GPU 3)]
+      (4): Parameter containing: [torch.cuda.FloatTensor of size 1x1 (GPU 3)]
+  )
+  (lins): ModuleList(
+    (0): Linear(240, 32, bias=True)
+    (1): Linear(32, 1, bias=True)
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+)
+Fold 0 epoch 331: F1:0.9315, ACC:0.9742, AUROC:0.9865, AUPRC:0.9511, TP:34.0
+Test F1:0.8701, ACC:0.9485, AUROC:0.9856, AUPRC:0.9457, TP:67.0
+Fold 1 epoch 116: F1:0.9589, ACC:0.9845, AUROC:0.9831, AUPRC:0.9629, TP:35.0
+Test F1:0.8811, ACC:0.9562, AUROC:0.9793, AUPRC:0.9215, TP:63.0
+Fold 2 epoch 331: F1:0.8333, ACC:0.9381, AUROC:0.9314, AUPRC:0.8766, TP:30.0
+Test F1:0.8516, ACC:0.9407, AUROC:0.9559, AUPRC:0.9381, TP:66.0
+Fold 3 epoch 146: F1:0.9211, ACC:0.9691, AUROC:0.9910, AUPRC:0.9613, TP:35.0
+Test F1:0.8571, ACC:0.9459, AUROC:0.9665, AUPRC:0.8984, TP:63.0
+Fold 4 epoch 130: F1:0.9315, ACC:0.9742, AUROC:0.9833, AUPRC:0.9639, TP:34.0
+Test F1:0.8533, ACC:0.9432, AUROC:0.9722, AUPRC:0.9457, TP:64.0
+Avg Test F1:0.8627±0.0113, ACC:0.9469±0.0053, AUROC:0.9719±0.0103, AUPRC:0.9299±0.0181, TP:64.6±64.6
+
+Display : False
+attn_drop : 0.3
+batch_size : 128
+cv_folds : 5
+data_dir : data/Breast_Cancer_Matrix
+drop_neg : 0.3
+drop_rate : 0.3
+heads : 4
+hidden_channels : 24
+lambda : 0.1
+learnable_factor : True
+lr : 0.002
+load_data : True
+log_dir : log
+loss : MMD
+mean : False
+num_epochs : 500
+num_neighbors : [40, 10]
+overlap : True
+pooling : max
+pos_only : False
+PPI : ['CPDB', 'IRef', 'Multinet', 'PCNet', 'STRING']
+pre_drop_rate : 0
+project : MPIT
+random_seed : 42
+reciprocal : False
+repeat : 1
+residual : True
+sample_rate : 1.0
+stable : True
+start_epoch : 100
+out_dir : outs
+wandb : True
+weight_decay : 0.005
+ablation : False
+cv : True
+change_loss : False
+encode : False
+fold : 0
+gpu : cuda:2
+model : Multi_GATRes
+pred : False
+ppi : None
+start_fold : 0
+sh : False
+toy : False
+train : True
+feat_disturb : None
+mode : train
+log_file : log/MCF7_train.txt
+Model: Multi_GATRes
+Train: 1026 Valid: 194 Test: 388 
+Multi_GATRes(
+  (convs): ModuleList(
+    (0): GATRes(
+      (convs): ModuleList(
+        (0): TransformerConv(10, 24, heads=4)
+        (1): TransformerConv(34, 24, heads=4)
+      )
+      (ln1): LayerNorm(34, affine=True, mode=graph)
+      (ln2): LayerNorm(48, affine=True, mode=graph)
+      (pool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+  )
+  (ppi_weight): ParameterList(  (0): Parameter containing: [torch.cuda.FloatTensor of size 1x1 (GPU 2)])
+  (lins): ModuleList(
+    (0): Linear(48, 32, bias=True)
+    (1): Linear(32, 1, bias=True)
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+)
+Fold 0 epoch 178: F1:0.8923, ACC:0.9639, AUROC:0.9768, AUPRC:0.9437, TP:29.0
+Test F1:0.8613, ACC:0.9510, AUROC:0.9777, AUPRC:0.9408, TP:59.0
+Fold 1 epoch 238: F1:0.9041, ACC:0.9639, AUROC:0.9856, AUPRC:0.9271, TP:33.0
+Test F1:0.8000, ACC:0.9175, AUROC:0.9717, AUPRC:0.9040, TP:64.0
+Fold 2 epoch 116: F1:0.8451, ACC:0.9433, AUROC:0.9599, AUPRC:0.8958, TP:30.0
+Test F1:0.8070, ACC:0.9149, AUROC:0.9679, AUPRC:0.9133, TP:69.0
+Fold 3 epoch 167: F1:0.9333, ACC:0.9742, AUROC:0.9956, AUPRC:0.9872, TP:35.0
+Test F1:0.8406, ACC:0.9433, AUROC:0.9622, AUPRC:0.9026, TP:58.0
+Fold 4 epoch 359: F1:0.8857, ACC:0.9588, AUROC:0.9629, AUPRC:0.9193, TP:31.0
+Test F1:0.7945, ACC:0.9225, AUROC:0.9517, AUPRC:0.8854, TP:58.0
+Avg Test F1:0.8207±0.0259, ACC:0.9299±0.0145, AUROC:0.9663±0.0089, AUPRC:0.9092±0.0182, TP:61.6±61.6
+
