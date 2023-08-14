@@ -5,13 +5,6 @@ import torch
 from scipy.optimize import linear_sum_assignment
 
 def gaussian_kernel(x, y, sigma=2.0):
-    """
-    高斯核函数
-    :param x: 第一个输入向量
-    :param y: 第二个输入向量
-    :param sigma: 核函数参数
-    :return: 核函数值
-    """
     dist = torch.sum((x.unsqueeze(1) - y.unsqueeze(0)) ** 2, dim=2)
     return torch.exp(-dist / (2 * sigma ** 2))# .type(torch.float64)
 
