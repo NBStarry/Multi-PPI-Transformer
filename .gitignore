@@ -7,3 +7,8 @@ data/*
 
 label_collect/K562
 label_collect/MCF7
+
+log/*
+!log/MCF7_train.txt
+
+outs/*
