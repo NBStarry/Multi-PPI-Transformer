@@ -5,6 +5,11 @@ wandb
 data/*
 !data/Lung_Cancer_Matrix/A549.zip
 
+results/*
+!results/A549_unknown_pred.csv
+!results/K562_unknown_pred.csv
+!results/MCF7_unknown_pred.csv
+
 label_collect/K562
 label_collect/MCF7
 

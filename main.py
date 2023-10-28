@@ -738,8 +738,8 @@ if __name__ == "__main__":
         known_pred = known_pred.drop('gene_index', axis=1)
         unknown_pred = gene_list.merge(unknown_pred)
         unknown_pred = unknown_pred.drop('gene_index', axis=1)
-        known_pred.to_csv(f'data/Results/{cell_line}_known_pred.csv', index=False)
-        unknown_pred.to_csv(f'data/Results/{cell_line}_unknown_pred.csv', index=False)
+        known_pred.to_csv(f'results/{cell_line}_known_pred.csv', index=False)
+        unknown_pred.to_csv(f'results/{cell_line}_unknown_pred.csv', index=False)
             
     
     if args.ablation:
